@@ -76,6 +76,11 @@ class Robot {
 
   }
 
+  toString() {
+    let lost = (this.lost) ? 'LOST': '';
+    return `${this.x} ${this.y} ${this.orientation} ${lost}`;
+  }
+
 };
 
 module.exports = Robot;
